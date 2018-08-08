@@ -2,9 +2,14 @@
   background: -webkit-linear-gradient(50deg,#2096ff,#05ffa3)!important;
   background: -o-linear-gradient(50deg,#2096ff,#05ffa3)!important;
   background: linear-gradient(40deg,#2096ff,#05ffa3)!important;
+  -webkit-border-radius: 10em;
   border-radius: 10em;
   -webkit-transition:.5s ease;
   -o-transition: .5s ease;
   transition:.5s ease;
+  padding: 1rem 2rem;
+}
+.isClicked{
+  display: none;
 }
 

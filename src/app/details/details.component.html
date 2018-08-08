@@ -1,1 +1,7 @@
-<button mdbBtn type="button" class="waves-light grade" mdbWavesEffect>MDB</button>
+<button mdbBtn (click)="showPassword()" type="button" class="waves-light grade" mdbWavesEffect>Display Details</button>
+<ng-container>
+
+<div *ngIf="show" class="container text-center">
+  <p>Secret Password: SuperSecretPassword!!</p>
+</div>
+</ng-container>
