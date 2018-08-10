@@ -1,7 +1,24 @@
-<button mdbBtn (click)="showPassword()" type="button" class="waves-light grade" mdbWavesEffect>Display Details</button>
-<ng-container>
-
-<div *ngIf="show" class="container text-center">
-  <p>Secret Password: SuperSecretPassword!!</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <button mdbBtn (click)="showPassword()" type="button" class="waves-light grade" mdbWavesEffect>{{buttonName}}
+      </button>
+    </div>
+    <div class="col">
+      <ng-container *ngIf="show">
+        <div class="container text-center">
+          <p style="margin: 16px 0px 16px 0px;">Secret Password: SuperSecretPassword!!</p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
 </div>
-</ng-container>
+
+<hr>
+
+
+
+
+  <div *ngFor="let count of count" [ngStyle]="{backgroundColor: count >= 5 ? 'blue' : 'transparent'}"
+     [ngClass]="{'text-white': count >= 5}">{{count}}</div>
+
