@@ -25,8 +25,9 @@ export class DetailsComponent implements OnInit {
     } else {
       this.buttonName = 'Show Password';
     }
-    this.count.push(this.count.length + 1);
-    this.counter++;
+    // this.count.push(this.count.length + 1);
+    // this.counter++;
+    this.count.push(new Date());
     console.log(this.count);
     console.log(this.counter);
   }

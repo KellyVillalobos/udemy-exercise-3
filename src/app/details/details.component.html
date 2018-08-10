@@ -19,6 +19,6 @@
 
 
 
-  <div *ngFor="let count of count" [ngStyle]="{backgroundColor: count >= 5 ? 'blue' : 'transparent'}"
-     [ngClass]="{'text-white': count >= 5}">{{count}}</div>
+  <div *ngFor="let count of count; let i = index" [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+     [ngClass]="{'text-white': i >= 4}">{{count}}</div>
 
